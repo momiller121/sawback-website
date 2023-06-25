@@ -1,3 +1,7 @@
+<script lang="ts">
+	import trips from '$lib/data/trips.json';
+</script>
+
 <div class="splash">
 	<div class="earnturns">
 		<h1>Earn<br />Your<br />Turns</h1>
@@ -5,6 +9,25 @@
 	</div>
 </div>
 
+<ul>
+	<li>
+		(The following data is pulled from the <a
+			href="https://github.com/momiller121/sawback-website/tree/main/src/lib/data/trips.json"
+			target="_blank">trips.json file</a
+		> at build time)
+	</li>
+	{#each trips as trip}
+		<li>
+			<span>{trip.id}</span>
+			<span>{trip.name}:</span>
+			<span>Starting on {trip.startDate}</span>
+			<span>
+				({(new Date(trip.endDate).getTime() - new Date(trip.startDate)) / (1000 * 60 * 60 * 24)} days)
+			</span>
+			<span> [capacity: {trip.capacity}]</span>
+		</li>
+	{/each}
+</ul>
 <article>
 	<p>
 		Fruitcake marzipan sweet roll caramels jujubes danish fruitcake pastry. Croissant chupa chups
@@ -63,6 +86,9 @@
 </article>
 
 <style>
+	ul {
+		margin-block: var(--size-8);
+	}
 	h1 {
 		margin-block: 0px;
 		color: white;
