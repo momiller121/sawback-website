@@ -18,8 +18,10 @@
 	</li>
 	{#each trips as trip}
 		<li>
-			<span>{trip.id}</span>
-			<span>{trip.name}:</span>
+			<a href="/{trip.slug}">
+				<span>{trip.id}</span>
+				<span>{trip.name}:</span>
+			</a>
 			<span>Starting on {trip.startDate}</span>
 			<span>
 				({(new Date(trip.endDate).getTime() - new Date(trip.startDate)) / (1000 * 60 * 60 * 24)} days)

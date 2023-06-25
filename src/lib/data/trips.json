@@ -2,6 +2,9 @@
     {
         "id": "BG23-3",
         "name": "Bernie",
+        "slug": "burnie-glacier-chalet",
+        "bannerText": "The best kept secret",
+        "description": "Now booking Winter 2023 One of Canada's very best ski touring lodges, Burnie Glacier Chalet is surrounded by towering glaciated peaks with epic 1500 m runs, and 700 m tree skiing behind the hut!",
         "startDate": "2023-01-06",
         "endDate": "2023-01-13",
         "price": 3195,
@@ -10,6 +13,7 @@
     {
         "id": "SL23-1",
         "name": "Selkirk",
+        "slug": "selkirk-lodge-ski-touring",
         "startDate": "2023-01-07",
         "endDate": "2023-01-14",
         "price": 3850,
