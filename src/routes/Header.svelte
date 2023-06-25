@@ -15,12 +15,13 @@
 	header {
 		z-index: 999;
 		position: fixed;
-		border: solid 3px red;
+		/* border: solid 3px red; */
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
 		box-sizing: border-box;
 		align-content: center;
+		padding: 1rem;
 	}
 	div .line {
 		display: block;

@@ -1,8 +1,8 @@
-<script>
-</script>
-
 <div class="splash">
-	<h1>Earn Your Turns</h1>
+	<div class="earnturns">
+		<h1>Earn<br />Your<br />Turns</h1>
+		<p class="p1">Ski trips to the most<br /> amazing places on earth</p>
+	</div>
 </div>
 
 <article>
@@ -65,34 +65,53 @@
 <style>
 	h1 {
 		margin-block: 0px;
-		position: relative;
-		top: 50vh;
-		left: 80vw;
 		color: white;
+		text-transform: uppercase;
+		font-family: 'Michroma', sans-serif;
+		font-size: var(--font-size-8);
 	}
 	article {
-		margin-inline: 2rem;
-		max-width: 50rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex: 1fr 1;
 	}
 	div {
 		margin: 0px;
 		padding: 0px;
 	}
+	div.splash .earnturns {
+		position: relative;
+		top: 50vh;
+		padding-right: 4rem;
+	}
+	div.splash p {
+		color: white;
+		position: relative;
+		text-align: right;
+		max-inline-size: none;
+		font-size: var(--font-size-5);
+	}
 	div.splash {
+		max-inline-size: none;
 		position: relative;
 		margin-inline: 0px;
 		min-height: 96vh;
 		top: 0;
 		left: 0;
 		background-image: url(/sawback-bg.webp);
-		background-position: center;
+		background-position-x: right;
+		background-position-y: top;
 		background-repeat: no-repeat;
 		background-size: cover;
+	}
+	div.splash h1 {
+		text-align: right;
+		max-inline-size: none;
 	}
 	@media (max-width: 900px) {
 		div.splash {
 			background-image: url(/sawback-bg-small.webp);
-			background-position-x: right;
 			background-position-y: bottom;
 		}
 	}
