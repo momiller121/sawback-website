@@ -114,5 +114,11 @@
 			background-image: url(/sawback-bg-small.webp);
 			background-position-y: bottom;
 		}
+		div.splash h1 {
+			font-size: var(--font-size-6);
+		}
+		div.splash p {
+			font-size: var(--font-size-3);
+		}
 	}
 </style>
